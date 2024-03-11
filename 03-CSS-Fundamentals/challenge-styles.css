@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+
+main {
+  border: 4px solid;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #cccccc46;
+}
+
+.price {
+  font-size: 26px;
+}
+
+.delivery-text {
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 14px;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 21px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  color: black;
+}
