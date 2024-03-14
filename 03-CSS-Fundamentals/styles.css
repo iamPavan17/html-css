@@ -59,6 +59,7 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -179,6 +180,25 @@ a:active {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+/* Pseudo Elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: bold;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  right: -25px;
+  top: -10px;
+  color: #000;
 }
 
 /* Chaining pseudo classes */
