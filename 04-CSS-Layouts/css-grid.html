@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid</title>
     <style>
+      body {
+        font-family: sans-serif;
+        font-size: 40px;
+      }
+
       .el--1 {
         background-color: blueviolet;
       }
@@ -34,24 +39,31 @@
 
       .container--1 {
         /* STARTER */
-        font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
         margin: 40px;
+        font-size: 32px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 200px 200px 100px 100px;
+        grid-template-rows: 300px 200px;
+
+        /* 
+        Similar to,
+        column-gap: 30px;
+        row-gap: 30px;
+        */
+        gap: 30px; /* SYNTAX: <'row-gap'> <'column-gap'>*/
       }
 
       .container--2 {
         /* STARTER */
-        font-family: sans-serif;
         background-color: black;
-        font-size: 40px;
         margin: 100px;
 
         width: 1000px;
         height: 600px;
-
+        display: none;
         /* CSS GRID */
       }
     </style>
