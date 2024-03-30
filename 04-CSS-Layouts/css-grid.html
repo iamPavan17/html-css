@@ -19,7 +19,7 @@
       }
       .el--3 {
         background-color: green;
-        /* height: 150px; */
+        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -45,11 +45,12 @@
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr auto;
-
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
         /* grid-template-rows: 300px 200px; */
+
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
-        height: 350px;
+        /* height: 350px; */
 
         /* 
         Similar to,
@@ -57,6 +58,24 @@
         row-gap: 30px;
         */
         gap: 30px; /* SYNTAX: <'row-gap'> <'column-gap'>*/
+      }
+
+      .el--8 {
+        /* Shorthand property for the below properties
+        grid-column-start
+        grid-column-end; 
+        
+        SYNTAX: grid-column: grid-column-start / grid-column-end;
+        */
+        grid-column: 2 / 3;
+
+        /* SYNTAX: grid-row: grid-row-start / grid-row-end; */
+        grid-row: 1 / 2;
+      }
+
+      .el--2 {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
       }
 
       .container--2 {
@@ -79,7 +98,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
