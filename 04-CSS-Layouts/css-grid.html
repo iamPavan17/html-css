@@ -58,6 +58,8 @@
         row-gap: 30px;
         */
         gap: 30px; /* SYNTAX: <'row-gap'> <'column-gap'>*/
+
+        display: none;
       }
 
       .el--8 {
@@ -81,12 +83,27 @@
       .container--2 {
         /* STARTER */
         background-color: black;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
-        display: none;
+
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 20px;
+
+        /* Aligning tracks inside container: 
+        distributing empty space */
+        justify-content: center;
+        align-content: center;
+
+        /* Aligning the items inside cells:
+          moving items around inside the cells(items)
+        */
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>
