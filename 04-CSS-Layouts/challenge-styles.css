@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 20px; */
 }
 
 .flex-item {
@@ -176,4 +176,20 @@ body {
 .add-cart:hover {
   color: #000;
   background-color: #fff;
+}
+
+/* GRID LAYOUT */
+article {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+h2 {
+  grid-column: 1 / span 3;
+}
+
+button {
+  grid-column: 1 / -1;
 }
