@@ -35,9 +35,36 @@
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+.section-hero {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  /* 100% will then fill the entire parent element
+  which is exactly one of the 2 cols of the grid,
+  And image will also have the half of the width
+  of the container. And since we are using percentage,
+  indeed the image does resize as well.
+  */
+  width: 100%;
 }
