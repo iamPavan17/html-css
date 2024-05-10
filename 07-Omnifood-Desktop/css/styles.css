@@ -14,10 +14,11 @@
 --- 02 COLORS SYSTEM
 
     - Primary: #e67e22
-    - Tints: 
+    - Tints: #fdf2e9
     - Shades: 
     - Accents: 
     - Greys: #555
+             #333
 
 --- 03 SHADOWS SYSTEM
 
@@ -50,13 +51,68 @@ body {
 }
 
 .section-hero {
-  max-width: 130rem;
-  margin: 0 auto;
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
 }
 
 .hero {
+  max-width: 130rem;
+  margin: 0 auto;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  transition: background-color 0.5s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  /* Trick to add the border inside */
+  box-shadow: 0 0 0 3px #fff inset;
 }
 
 .hero-img {
@@ -67,4 +123,8 @@ body {
   indeed the image does resize as well.
   */
   width: 100%;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
